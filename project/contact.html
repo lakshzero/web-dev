@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Space Explorers</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#discoveries">Discoveries</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Contact Space Explorers</h1>
+            <p>We would love to hear from you! Connect with us to learn more about the cosmos.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Our Address</h3>
+                <p>123 Milky Way<br>Galaxy City, 2024</p>
+
+                <h3>Email</h3>
+                <p><a href="mailto:info@universe.com">info@universe.com</a></p>
+
+                <h3>Phone</h3>
+                <p>+1 (800) 555-SPACE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Space Explorers. All rights reserved.
+    </footer>
+
+    <!-- Minimal JavaScript for Form Validation -->
+    <script>
+        const form = document.querySelector('.contact-form');
+
+        form.addEventListener('submit', (e) => {
+            const name = document.querySelector('#name').value.trim();
+            const email = document.querySelector('#email').value.trim();
+            const message = document.querySelector('#message').value.trim();
+
+            if (!name || !email || !message) {
+                alert('Please fill out all fields before submitting.');
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

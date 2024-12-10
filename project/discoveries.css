@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background: #1a1a1a;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('https://i.pinimg.com/originals/8b/9c/76/8b9c76e11bdac0a7b78915657e294154.gif') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #4a90e2;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .discoveries-section {
+    padding: 40px 20px;
+  }
+  
+  .discoveries-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .discovery {
+    flex: 1 1 300px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+  }
+  
+  .discovery.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .discovery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .discovery .text {
+    padding: 10px;
+  }
+  
+  .discovery .text h3 {
+    font-size: 1.2rem;
+    color: #4a90e2;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #1a1a1a;
+    color: #999;
+  }
+  
